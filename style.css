@@ -3,7 +3,7 @@
    ========================================================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Um degradê dinâmico, moderno e com cores vivas para dar contraste */
+    
     background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 35%, #4c1d95 70%, #831843 100%);
     background-size: cover;
     background-attachment: fixed;

@@ -12,7 +12,7 @@ formulario.addEventListener('submit', function(event) {
     const nome = document.getElementById('nome').value;
     const idade = parseInt(document.getElementById('idade').value);
     const altura = parseFloat(document.getElementById('altura').value);
-
+//comentário esquecido
     // Limpamos as cores de respostas anteriores
     resultadoDiv.className = "mensagem-resultado";
 
