@@ -1,0 +1,159 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E FUNDO (DEGRADÊ MODERNO)
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Um degradê dinâmico, moderno e com cores vivas para dar contraste */
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 35%, #4c1d95 70%, #831843 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   CONTAINER PRINCIPAL (ESTILO OFF-WHITE COM GLASSMORPHISM)
+   ========================================================================== */
+.container {
+    /* Cor Off-White pura (#f8f9fa) com 85% de opacidade para efeito de vidro */
+    background-color: rgba(248, 249, 250, 0.85); 
+    backdrop-filter: blur(12px); /* Desfoca suavemente o fundo atrás da caixa */
+    -webkit-backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 24px; /* Bordas mais arredondadas e amigáveis */
+    /* Sombra profunda e suave para dar a impressão de flutuação */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito sutil de movimento ao passar o mouse na caixa */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: #1e1b4b; /* Tom escuro azulado para excelente contraste no off-white */
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+/* ==========================================================================
+   FORMULÁRIOS E ENTRADAS DE DADOS
+   ========================================================================== */
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569; /* Cinza elegante */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input {
+    padding: 14px 16px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0; /* Borda bem clarinha */
+    border-radius: 12px;
+    font-size: 16px;
+    color: #1e293b;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de foco moderno quando o usuário clica no campo */
+input:focus {
+    border-color: #6366f1; /* Destaque em tom Índigo */
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   BOTÃO COM DESTAQUE GLOW
+   ========================================================================== */
+button {
+    width: 100%;
+    padding: 16px;
+    /* Degradê sofisticado para o botão de ação */
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5); /* Efeito de brilho expandido */
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* ==========================================================================
+   MENSAGENS DE RESULTADO DESSATURADAS E ELEGANTES
+   ========================================================================== */
+.mensagem-resultado {
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    display: none;
+    animation: surgindo 0.4s ease forwards;
+}
+
+/* Tons de verde modernos para o sucesso */
+.sucesso {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    display: block;
+}
+
+/* Tons de vermelho sofisticados para o erro */
+.erro {
+    background-color: #fff5f5;
+    color: #9b1c1c;
+    border: 1px solid #feb2b2;
+    display: block;
+}
+
+/* Animação suave para a resposta aparecer na tela */
+@keyframes surgindo {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
